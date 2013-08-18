@@ -1,8 +1,9 @@
 /* BODY */
 
-html,body {
+body {
   background-color: #E6EBEA;
-  font: 100%/1.4 "lucida sans unicode","lucida grande","Trebuchet MS",verdana,arial,helvetica,helve,sans-serif;
+  font: 100%/1.4 "Open Sans","lucida sans unicode","lucida grande","Trebuchet MS",verdana,arial,helvetica,helve,sans-serif;
+  font-weight: 300;
   height: 100%;
   margin: 0 auto;
 }
@@ -12,6 +13,35 @@ main.wrapper {
 }
 
 /* HEADER */
+
+ul.color {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.color li {
+  display: block;
+  height: 8px;
+}
+
+ul.color li:nth-child(1) {
+  background: rgba(222, 68, 56, 1);
+}
+
+ul.color li:nth-child(2) {
+  background: rgba(222, 68, 56, 0.66);
+}
+
+ul.color li:nth-child(3) {
+  background: rgba(222, 68, 56, 0.33);
+}
+
+h4.title {
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1)
+}
 
 /* MAIN CONTENT */
 
@@ -28,9 +58,14 @@ p.content {
 }
 
 p.content span:hover {
+  border-bottom: 1px dotted rgba(222, 68, 56, 1);
   text-shadow: 0px 2px 0px rgba(0,0,0,0.3)
 }
 
 p.content span.comma:after {
   content: ",";
 }
+
+/* FOOTER */
+
+
