@@ -7,6 +7,10 @@ Created by [Jeff Belser](http://www.twitter.com/JustAboutJeff) for [NoRedInk](ht
 
 Dynamic Punctuation is a JS/CSS/HTML application that helps anyone practice their english grammar. The initial prototype was built in a few hours, over a few cups of coffee, on a lazy Sunday.
 
+##Screenshot
+
+![Dynamic Punctuation](/screen_shot.png)
+
 ##Install
 
 - Fork the repo and clone the files onto your local machine:
