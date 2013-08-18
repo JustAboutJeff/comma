@@ -1,6 +1,6 @@
-/* BODY */
+/* BODY + GLOBAL */
 
-body {
+html,body {
   background-color: #E6EBEA;
   font: 100%/1.4 "Open Sans","lucida sans unicode","lucida grande","Trebuchet MS",verdana,arial,helvetica,helve,sans-serif;
   font-weight: 300;
@@ -12,48 +12,64 @@ main.wrapper {
   min-height: 100%;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 /* HEADER */
 
-ul.color {
+header.title-wrap {
+  margin: 120px auto;
+  text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 .title {
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1)
+}
+
+ul.color-bar {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-ul.color li {
+ul.color-bar li {
   display: block;
   height: 8px;
 }
 
-ul.color li:nth-child(1) {
+ul.color-bar li:nth-child(1) {
   background: rgba(222, 68, 56, 1);
 }
 
-ul.color li:nth-child(2) {
+ul.color-bar li:nth-child(2) {
   background: rgba(222, 68, 56, 0.66);
 }
 
-ul.color li:nth-child(3) {
+ul.color-bar li:nth-child(3) {
   background: rgba(222, 68, 56, 0.33);
-}
-
-h4.title {
-  font-weight: 800;
-  font-style: italic;
-  text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1)
 }
 
 /* MAIN CONTENT */
 
 section.content-wrap {
   overflow: auto;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 p.content {
   cursor: pointer;
-  font-size: 30px;
+  background-color: rgba(255,255,255,0.85);
+  border: 1px solid #bbb;
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 40px;
   margin: 0 auto;
+  padding: 0.5em;
   width: 80%;
 }
 
@@ -68,4 +84,25 @@ p.content span.comma:after {
 
 /* FOOTER */
 
+footer.foot-wrap {
+  background-color: rgba(255,255,255,0.65);
+  border-top: 1px solid #bbb;
+  clear: both;
+  height: 60px;
+  margin-top: -60px;
+  position: relative;
+}
+
+footer.foot-wrap p.foot {
+  color: #888;
+  font-size: 14px;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer.foot-wrap span.red {
+  color: rgba(222, 68, 56, 1);
+}
 
