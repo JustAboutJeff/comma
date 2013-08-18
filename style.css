@@ -1,0 +1,36 @@
+/* BODY */
+
+html,body {
+  background-color: #E6EBEA;
+  font: 100%/1.4 "lucida sans unicode","lucida grande","Trebuchet MS",verdana,arial,helvetica,helve,sans-serif;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main.wrapper {
+  min-height: 100%;
+}
+
+/* HEADER */
+
+/* MAIN CONTENT */
+
+section.content-wrap {
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+p.content {
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+p.content span:hover {
+  text-shadow: 0px 2px 0px rgba(0,0,0,0.3)
+}
+
+p.content span.comma:after {
+  content: ",";
+}
